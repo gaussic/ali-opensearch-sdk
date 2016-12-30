@@ -3,10 +3,10 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='ali-opensearch',
-    version='2.0.2',
+    name='opensearch-sibbay',
+    version='2.1.0',
     packages=find_packages(),
-    keywords=('OpenSearch SDK', 'Ali Cloud'),
+    keywords=('OpenSearch SDK', 'Aliyun for Sibbay'),
     description='Python SDK for OpenSearch of Ali Cloud',
     license='Apache License Version 2.0',
     url='https://github.com/yanheven/ali-opensearch-sdk',

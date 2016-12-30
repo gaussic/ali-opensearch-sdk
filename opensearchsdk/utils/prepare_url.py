@@ -3,7 +3,7 @@ import base64
 import hashlib
 import hmac
 import six
-import sys
+# import sys
 import time
 import uuid
 try:
@@ -13,11 +13,11 @@ except ImportError:
 
 
 def url_quote(encode_str):
-    if isinstance(encode_str, six.binary_type):
-        if sys.stdin.encoding is None:
-            encode_str = encode_str.decode('cp936').encode('utf8')
-        else:
-            encode_str = encode_str.decode(sys.stdin.encoding).encode('utf8')
+    # if isinstance(encode_str, six.binary_type):
+    #     if sys.stdin.encoding is None:
+    #         encode_str = encode_str.decode('cp936').encode('utf8')
+    #     else:
+    #         encode_str = encode_str.decode(sys.stdin.encoding).encode('utf8')
     res = quote(encode_str, '~')
     res = res.replace('+', '%20')
     res = res.replace('*', '%2A')
